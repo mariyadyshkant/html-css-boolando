@@ -11,23 +11,24 @@ img {
 }
 
 .container {
-    border: 1px solid green;
-    max-width: 1200px;
+    /* border: 1px solid green; */
     width: 80%;
     margin: 0 auto;
 }
 
 
 /*  HEADER */
-header {
+#app_header {
 
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 1200px;
     height: 50px;
     background-color: #fe8936;
     color: white;
     word-spacing: 8px;
-    padding: 1rem;
+    padding: 0.8rem 0rem;
+    position: fixed;
+    z-index: 2;
 
     .logo {
         width: 100px;
@@ -39,10 +40,14 @@ header {
     }
 
     .container {
-        /* position: sticky; */
-        top: 0;
-        left: 0;
-        z-index: 1000;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        height: 100%;
     }
 }
 
@@ -50,11 +55,10 @@ header {
 /* MAIN */
 main {
     border: 1px solid green;
-    width: 950px;
-    height: 1200px;
+    width: 1200px;
 
     .container {
-        margin: 20px auto;
+        margin: 75px auto;
 
     }
 
