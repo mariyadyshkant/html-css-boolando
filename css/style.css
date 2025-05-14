@@ -135,10 +135,6 @@ p {
     text-decoration: line-through;
 }
 
-.img_1:hover {
-    background-image: url(../img/1.jpg);
-    background-size: cover;
-}
 
 #app_footer {
     background-color: black;
@@ -156,4 +152,24 @@ p {
     justify-content: space-between;
     align-items: center;
     line-height: 1.5rem;
+}
+
+.card {
+    .img_1 {
+        display: block;
+    }
+
+    .img_2 {
+        display: none;
+    }
+}
+
+.card:hover {
+    .img_1 {
+        display: none;
+    }
+
+    .img_2 {
+        display: block;
+    }
 }
