@@ -12,7 +12,7 @@ img {
 
 .container {
     border: 1px solid green;
-    max-width: 700px;
+    max-width: 1200px;
     width: 80%;
     margin: 0 auto;
 }
@@ -22,7 +22,7 @@ img {
 header {
 
     border: 1px solid green;
-    width: 950px;
+    width: 1200px;
     height: 50px;
     background-color: #fe8936;
     color: white;
@@ -54,7 +54,6 @@ main {
     height: 1200px;
 
     .container {
-        height: 100%;
         margin: 20px auto;
 
     }
@@ -78,7 +77,7 @@ main {
         }
 
         .bookmark {
-            background-color: aliceblue;
+            background-color: white;
             padding: 0.35rem;
             position: absolute;
             top: 1rem;
@@ -88,23 +87,31 @@ main {
         }
 
         .discount {
-            background-color: red;
-            padding: 1px;
-            width: 30px;
+            background-color: rgb(225, 44, 44);
+            padding: 0.1rem 0.5rem 0.3rem 0.4rem;
+            width: 50px;
             position: absolute;
             bottom: 1rem;
             left: 0;
             z-index: 3;
+            text-align: center;
+            color: white;
         }
 
         .sustainable {
-            background-color: rgb(11, 178, 30);
-            padding: 1px;
-            width: 30px;
+            background-color: rgb(38, 135, 49);
+            padding: 0.2rem 0.5rem 0.3rem 0.4rem;
+            width: 100px;
             position: absolute;
             bottom: 1rem;
-            left: 0;
+            left: 3.3rem;
             z-index: 3;
+            text-align: center;
+            color: white;
+        }
+
+        .sustainable.img_6 {
+            left: 0rem;
         }
     }
 }
@@ -115,9 +122,19 @@ p {
 
 .caps {
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .red_price {
     color: red;
-    text-decoration: line-through red;
+    font-weight: bold;
+}
+
+.line_through {
+    text-decoration: line-through;
+}
+
+.img_1:hover {
+    background-image: url(../img/1.jpg);
+    background-size: cover;
 }
